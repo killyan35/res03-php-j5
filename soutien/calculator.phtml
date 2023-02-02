@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Formulaire
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="form">
+        <main>
+            
+            
+            <form method="post" action="index.php">
+                
+                <h2 id="resultat"> 
+                <?php  
+                $result;
+                if($result !== NULL)
+                {
+                    echo $result ; 
+                }
+                ?>
+                </h2>
+                    <label for="nb1">nombre 1</label>
+                    <input type="text" name="nb1" id="nb1" />
+                    
+                    <label for="nb2">nombre 2</label>
+                    <input type="text" name="nb2" id="nb2" />
+                    
+                    <select name="choice" id="select">
+                        <option value="">Please choose an operations</option>
+                        <option value="multiplication">multiplication</option>
+                        <option value="division">division</option>
+                        <option value="soustraction">soustraction</option>
+                        <option value="addition">addition</option>
+                        <option value="modulo">modulo</option>
+                    </select>
+                    
+                    <input type="submit" value="Envoyer" />
+            </form>
+      </main>
+    </body>
+</html>

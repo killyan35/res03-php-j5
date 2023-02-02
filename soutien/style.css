@@ -1,0 +1,35 @@
+
+main {
+    height:100vh;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#form {
+    height:100vh;
+    width:100%;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefefe;
+}
+
+
+
+
+
+#form input[type='submit'] {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    line-height: 2em;
+    background-color: #24527c;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
